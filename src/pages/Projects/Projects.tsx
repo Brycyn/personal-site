@@ -15,7 +15,6 @@ const Projects: React.FC = () => {
     { value: 'all', label: 'All Projects' },
     { value: 'web', label: 'Web Development' },
     { value: 'mobile', label: 'Mobile Apps' },
-    { value: 'ai', label: 'AI / Machine Learning' },
   ];
 
   return (
@@ -75,7 +74,7 @@ const Projects: React.FC = () => {
           I'm always looking for new challenges and opportunities to collaborate on innovative projects.
         </p>
         <motion.a
-          href="mailto:contact@johndoe.com"
+          href="mailto:brycyn8@gmail.com"
           className="inline-block px-8 py-4 bg-white text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

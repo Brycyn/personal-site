@@ -1,4 +1,4 @@
-export type ProjectCategory = "web" | "mobile" | "ai";
+export type ProjectCategory = "web" | "mobile";
 
 export interface Project {
   id: number;
@@ -26,7 +26,6 @@ export const projects: Project[] = [
       "Saleforce",
       "Fetch/Axios API",
     ],
-    githubUrl: "https://github.com",
   },
   {
     id: 2,
