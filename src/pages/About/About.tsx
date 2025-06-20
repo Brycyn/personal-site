@@ -272,9 +272,10 @@ const About: React.FC = () => {
             Westmont College
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Graduated with honors. Specialized in software engineering and
-            distributed systems. Participated in multiple hackathons and coding
-            competitions.
+            Graduated with a Bachelor’s Degree in Computer Science while
+            competing as a member of the Men’s Basketball Team. Completed an
+            external internship as a Software Developer, focusing on Salesforce
+            and mobile application development.
           </p>
         </motion.div>
         <br />
@@ -294,9 +295,10 @@ const About: React.FC = () => {
             Santa Barbara City College{" "}
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Graduated with honors. Specialized in software engineering and
-            distributed systems. Participated in multiple hackathons and coding
-            competitions.
+            Graduated with honors on the Presidential Honor Roll and an
+            Associates Degree in Business and Economics while competing as a
+            member of the Men’s Basketball Team. Earned First-Team
+            All-Conference recognition for athletic performance.{" "}
           </p>
         </motion.div>
         <br />
@@ -316,9 +318,10 @@ const About: React.FC = () => {
             Dos Pueblos Senior High School{" "}
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Graduated with honors. Specialized in software engineering and
-            distributed systems. Participated in multiple hackathons and coding
-            competitions.
+            Member of the Dos Pueblos Engineering Academy (DPEA) for four years,
+            where I programmed with Arduino, designed in SolidWorks, and worked
+            in the machine shop building project components using lathes, mills,
+            and CNC machines.{" "}
           </p>
         </motion.div>
       </section>
