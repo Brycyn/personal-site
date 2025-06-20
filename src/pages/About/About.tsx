@@ -45,30 +45,29 @@ const About: React.FC = () => {
     {
       company: "Westmont College",
       role: "Software Engineer",
-      period: "2023 - 2024",
+      period: "2023 - present",
       description:
-        "Collaborated in an agile team to build and deploy web applications, focusing on frontend development and responsive design.",
+        " Led a team of student developers at CATLab to enhance Westmont College’s mobile app by applying user-focused design principles. Developed and deployed a cross-platform mobile app for iOS and Android using React Native and Expo, supporting real-time data access for over 2,000 users. Contributed to enterprise-grade feature development and code reviews to ensure best practices and optimal performance. Additionally, created custom Lightning Web Components within an agile environment to support ongoing improvements.",
     },
     {
       company: "WebConnex",
       role: "Engineering Intern",
       period: "2025 - Present",
       description:
-        "Leading development of cloud-native applications, mentoring junior engineers, and implementing best practices for code quality and testing.",
+        "Redesigned and optimized the Account Manager UI on the Webconnex platform using React, significantly improving mobile responsiveness and usability. Implemented custom GraphQL logic for seamless cross-device account information retrieval and editing, enhancing accessibility and user satisfaction. Developed automated tests with React, Vite, and Apollo Client mocks to validate login functionality, boosting test coverage and ensuring reliable authentication.",
     },
     {
       company: "Tondro Consulting",
       role: "Salesforce Developer Intern",
       period: "2024",
-      description:
-        "Developed and maintained full-stack web applications using React, Node.js, and PostgreSQL, improving performance and user experience.",
+      description: `Developed and deployed custom Lightning Web Components to enhance dynamic data presentation and user interaction. Built scalable backend logic and interactive frontends using Apex and JavaScript, ensuring secure, enterprise-grade solutions. Integrated complex attendance tracking systems for 500+ users with cross-platform Salesforce components, maintaining data accuracy and compliance. Skilled in managing large datasets with a strong focus on data quality.`,
     },
     {
       company: "CATLab",
       role: "Salesforce Developer",
       period: "2023 - 2024",
       description:
-        "Collaborated in an agile team to build and deploy web applications, focusing on frontend development and responsive design.",
+        "Collaborated in an agile team to build and deploy web applications in salesforce (LWC), focusing on frontend development and responsive design.",
     },
   ];
 
@@ -133,6 +132,7 @@ const About: React.FC = () => {
               </a>
               <a
                 href={Resume}
+                target={"_blank"}
                 className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 <FileText size={18} /> Resume
