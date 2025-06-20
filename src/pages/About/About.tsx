@@ -17,28 +17,22 @@ const About: React.FC = () => {
         "Apex",
         "HTML ",
         "SOQL",
+        "React",
+        "CSS",
       ],
     },
     {
       category: "Frontend",
-      items: [
-        "React",
-        "LWC",
-        "React Native",
-        "Vue.js",
-        "Next.js",
-        "TailwindCSS",
-        "GraphQL",
-      ],
+      items: ["React", "Lightning Web Component", "React Native", "GraphQL"],
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "Django"],
+      items: ["Node.js", "Django"],
     },
-    {
-      category: "DevOps",
-      items: ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    },
+    // {
+    //   category: "DevOps",
+    //   items: ["Docker", "Kubernetes", "AWS", "CI/CD"],
+    // },
   ];
 
   const experiences = [
@@ -85,28 +79,72 @@ const About: React.FC = () => {
           <div className="lg:col-span-3">
             <h1 className="text-4xl font-bold mb-4">About Me</h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate software engineer with 3+ years of experience
-              building modern web applications and distributed systems. I
-              specialize in creating elegant, efficient solutions to complex
-              problems.
+              I'm a passionate software engineer with over three years of
+              experience building modern web applications and distributed
+              systems. I specialize in crafting clean, efficient solutions to
+              complex challenges, with a focus on performance, scalability, and
+              user experience.
             </p>
+
+            <h3 className="text-2xl font-bold mb-4">Where I Come From</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-8">
-              My journey in software development began my freshman year of high
-              school when I was introduced to the world of Arduino as a member
-              of the Dos Pueblos Engineering Academy and flourished as lead
-              developer at Westmont College's Center for Applied Technology. At
-              Tondro Consulting, I contributed to data clean-up initiatives and
-              built custom Lightning Web Components (LWC) to help faculty manage
-              attendance more effectively. At Webconnex, I redesigned and
-              optimized the Account Manager UI using React, improving mobile
-              responsiveness and enhancing usability. I also implemented custom
-              GraphQL logic to allow users to seamlessly retrieve and edit
-              account information across devices, and developed automated tests
-              in React/Vite using Apollo Client mocks to ensure robust and
-              reliable login functionality. I'm constantly learning and
-              exploring new technologies to stay at the forefront of the rapidly
-              evolving tech landscape.
+              I grew up in Santa Barbara, CA, and spent much of my life as a
+              student-athlete. I initially played both football and basketball,
+              but in high school, I chose to focus solely on basketball. After
+              graduating, I continued my academic and athletic journey at Santa
+              Barbara City College (SBCC), where I studied Business for 2.5
+              years before receiving an opportunity to play at Westmont College.
+              At Westmont, I discovered my faith and decided to change my major
+              to Computer Science. Although the coursework was rigorous, I found
+              it far more engaging and fulfilling. My time at Westmont not only
+              strengthened my faith but also allowed me to build meaningful
+              relationships within the community—connections that have had a
+              lasting impact on my life.
             </p>
+            <h3 className="text-2xl font-bold mb-4">Road to SWE</h3>
+
+            <div className="text-gray-700 dark:text-gray-300 space-y-8">
+              <p>
+                My journey into software development began during my freshman
+                year of high school when I joined the Dos Pueblos Engineering
+                Academy. There, I was introduced to Arduino and spent four years
+                programming boards for various hands-on projects. After
+                graduating from the academy, I took a break from coding until I
+                arrived at Westmont College.
+              </p>
+              <p>
+                It was at Westmont, during a Human-Computer Interaction course
+                with Dr. Daniel Patterson, that I realized I wanted to pursue a
+                career in software development. That same year, I joined
+                Westmont’s Center for Applied Technology (CATLab) as a
+                Salesforce Developer. At CATLab, I gained valuable experience
+                working in an agile environment, building projects used by
+                students and staff—including reviving an outdated mobile app and
+                contributing to the college’s website.
+              </p>
+              <p>
+                After a year at CATLab, I interned at Tondro Consulting, where I
+                contributed to data clean-up initiatives and developed custom
+                Lightning Web Components (LWC) to improve faculty attendance
+                management.
+              </p>
+              <p>
+                Currently, I’m working at Webconnex, where I’ve collaborated
+                with a team of interns to enhance and optimize the Account
+                Manager UI using React and custom Rainbow components. Our work
+                significantly improved mobile responsiveness and usability. I
+                also implemented custom GraphQL logic for seamless cross-device
+                account management and developed automated tests with React/Vite
+                and Apollo Client mocks to ensure secure and reliable login
+                functionality.
+              </p>
+              <p>
+                I’m passionate about building intuitive, impactful software—and
+                I’m continually learning and exploring new technologies to stay
+                ahead in this fast-evolving industry.
+              </p>
+            </div>
+            <br />
             <div className="flex flex-wrap gap-4">
               <a
                 href="https://github.com/Brycyn"
