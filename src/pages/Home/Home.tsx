@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-      className="space-y-20"
+      className="space-y"
     >
       {/* Hero Section */}
       <section className="relative py-20">
@@ -45,12 +45,6 @@ const Home: React.FC = () => {
             >
               View Projects <ArrowRight size={18} />
             </Link>
-            <Link
-              to="/about"
-              className="px-6 py-3 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100 font-medium rounded-lg border border-gray-300 dark:border-gray-700 transition-colors duration-300"
-            >
-              About Me
-            </Link>
           </motion.div>
         </div>
       </section>
@@ -58,7 +52,7 @@ const Home: React.FC = () => {
       {/* Skills Section */}
       <section className="py-12">
         <h2 className="text-3xl font-bold text-center mb-12">Core Expertise</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex justify-center gap-8">
           {[
             {
               icon: <Code className="w-12 h-12 text-blue-500" />,
@@ -71,12 +65,6 @@ const Home: React.FC = () => {
               title: "Backend Development",
               description:
                 "Building robust APIs and services using Node.js, Express, and SQL/NoSQL databases with a focus on scalability.",
-            },
-            {
-              icon: <Terminal className="w-12 h-12 text-indigo-500" />,
-              title: "DevOps & Architecture",
-              description:
-                "Implementing CI/CD pipelines, containerization, and cloud infrastructure to ensure reliable deployments.",
             },
           ].map((skill, index) => (
             <motion.div
