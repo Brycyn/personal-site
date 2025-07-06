@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import ProjectCard from './ProjectCard';
-import { projects, ProjectCategory } from './projectsData';
-import { Filter } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
+import { projects, ProjectCategory } from "./projectsData";
+import { Filter } from "lucide-react";
+import ContactCTA from "../../components/ContactCTA";
 
 const Projects: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<ProjectCategory | 'all'>('all');
+  const [activeFilter, setActiveFilter] = useState<ProjectCategory | "all">(
+    "all"
+  );
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "all"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
-  const filterCategories: { value: ProjectCategory | 'all', label: string }[] = [
-    { value: 'all', label: 'All Projects' },
-    { value: 'web', label: 'Web Development' },
-    { value: 'mobile', label: 'Mobile Apps' },
-  ];
+  const filterCategories: { value: ProjectCategory | "all"; label: string }[] =
+    [
+      { value: "all", label: "All Projects" },
+      { value: "web", label: "Web Development" },
+      { value: "mobile", label: "Mobile Apps" },
+    ];
 
   return (
     <motion.div
@@ -29,8 +34,8 @@ const Projects: React.FC = () => {
       <section className="py-12 text-center">
         <h1 className="text-4xl font-bold mb-4">My Projects</h1>
         <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          A collection of my recent work across various technologies and domains.
-          Each project represents a unique challenge and solution.
+          A collection of my recent work across various technologies and
+          domains. Each project represents a unique challenge and solution.
         </p>
       </section>
 
@@ -46,8 +51,8 @@ const Projects: React.FC = () => {
             onClick={() => setActiveFilter(category.value)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               activeFilter === category.value
-                ? 'bg-blue-600 dark:bg-blue-700 text-white'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                ? "bg-blue-600 dark:bg-blue-700 text-white"
+                : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
             }`}
           >
             {category.label}
@@ -56,7 +61,7 @@ const Projects: React.FC = () => {
       </section>
 
       {/* Projects Grid */}
-      <motion.section 
+      <motion.section
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -68,20 +73,7 @@ const Projects: React.FC = () => {
       </motion.section>
 
       {/* Contact CTA */}
-      <section className="py-16 px-8 bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-700 dark:to-teal-600 rounded-2xl text-white text-center">
-        <h2 className="text-3xl font-bold mb-6">Have a project in mind?</h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
-          I'm always looking for new challenges and opportunities to collaborate on innovative projects.
-        </p>
-        <motion.a
-          href="mailto:brycyn8@gmail.com"
-          className="inline-block px-8 py-4 bg-white text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Start a Conversation
-        </motion.a>
-      </section>
+      <ContactCTA description="Let's collaborate on your next project and bring your ideas to life." />
     </motion.div>
   );
 };

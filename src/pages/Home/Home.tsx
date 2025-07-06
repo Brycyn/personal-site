@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Cloud, Code, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import ContactCTA from "../../components/ContactCTA";
 
 const Home: React.FC = () => {
   return (
@@ -93,24 +94,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 rounded-2xl bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-700 dark:to-teal-600 text-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Interested in working together?
-          </h2>
-          <p className="text-xl mb-8 text-blue-50">
-            Let's collaborate on your next project and bring your ideas to life.
-          </p>
-          <motion.a
-            href="mailto:brycyn8@gmail.com"
-            className="inline-block px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 font-medium rounded-lg transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get In Touch
-          </motion.a>
-        </div>
-      </section>
+      <ContactCTA
+        description="I'm always looking for new challenges and opportunities to collaborate on innovative projects.
+
+"
+      />
     </motion.div>
   );
 };
