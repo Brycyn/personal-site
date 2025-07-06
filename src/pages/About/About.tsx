@@ -7,32 +7,81 @@ import Resume from "../../assets/Brycyn Gossett 2025.pdf";
 const About: React.FC = () => {
   const skills = [
     {
-      category: "Languages",
+      category: "Mobile Development",
       items: [
-        "JavaScript",
+        "React Native",
+        "Expo",
+        "Expo Router",
         "TypeScript",
-        "Python",
-        "Java",
-        "SQL",
-        "Apex",
-        "HTML ",
-        "SOQL",
-        "React",
-        "CSS",
+        "React Navigation",
+        "AsyncStorage",
+        "Context API",
+        "Agendas & Calendars",
       ],
     },
     {
-      category: "Frontend",
-      items: ["React", "Lightning Web Component", "React Native", "GraphQL"],
+      category: "Salesforce Development",
+      items: [
+        "Apex",
+        "Lightning Web Components (LWC)",
+        "SOQL & SOSL",
+        "Custom Metadata",
+        "Salesforce Auth (OAuth 2.0)",
+        "Salesforce REST API",
+        "Experience Cloud",
+        "Wrapper Classes",
+        "Salesforce Flows",
+      ],
     },
     {
-      category: "Backend",
-      items: ["Node.js", "Django"],
+      category: "Web Development",
+      items: [
+        "React",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Next.js",
+        "Framer Motion",
+        "Responsive Design",
+      ],
     },
-    // {
-    //   category: "DevOps",
-    //   items: ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    // },
+    {
+      category: "Backend & Tools",
+      items: [
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Supabase",
+        "Git & GitHub",
+        "Bitbucket",
+        "Bitbucket Pipelines",
+        "Jest",
+        "Maestro",
+      ],
+    },
+    {
+      category: "Project Management",
+      items: [
+        "Agile Development",
+        "Sprint Planning",
+        "Git Workflow",
+        "Code Reviews",
+        "Pull Request Management",
+        "Branching Strategies",
+      ],
+    },
+    {
+      category: "Soft Skills",
+      items: [
+        "Cross-functional Communication",
+        "Problem Solving",
+        "User-Centered Thinking",
+        "Mentorship & Collaboration",
+        "Time Management",
+        "Adaptability",
+      ],
+    },
   ];
 
   const experiences = [
@@ -198,7 +247,7 @@ const About: React.FC = () => {
       {/* Skills */}
       <section className="py-12">
         <h2 className="text-3xl font-bold mb-10">Skills & Technologies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skillGroup, index) => (
             <motion.div
               key={index}
