@@ -24,17 +24,20 @@ export const projects: Project[] = [
       "Expo",
       "Node.js",
       "Saleforce",
-      "Fetch/Axios API",
+      "Fetch",
+      "iOS",
+      "Android",
+      "Web",
     ],
   },
   {
     id: 2,
     title: "Santa Barbara Food Finder",
     description:
-      "An easy way to find local Food Banks and Bus Routes to them in the 805 (Web Compatible)",
+      "An easy way to find local Food Banks and Bus Routes to them in the 805",
     image: "../../src/assets/SBCFoodBank.png",
     category: "mobile",
-    technologies: ["React Native", "Expo", "Node.js", "Fetch/Axios API"],
+    technologies: ["React Native", "Expo", "Node.js", "iOS", "Android", "Web"],
     githubUrl: "https://github.com/Brycyn/FoodFinder",
   },
 ];

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Code, Terminal, Database } from "lucide-react";
+import { ArrowRight, Cloud, Code, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
@@ -61,10 +61,16 @@ const Home: React.FC = () => {
                 "Creating responsive, accessible, and performant user interfaces with React, TypeScript, and modern CSS frameworks.",
             },
             {
-              icon: <Database className="w-12 h-12 text-teal-500" />,
-              title: "Backend Development",
+              icon: <Smartphone className="w-12 h-12 text-teal-500" />,
+              title: "Mobile Development",
               description:
-                "Building robust APIs and services using Node.js, Express, and SQL/NoSQL databases with a focus on scalability.",
+                "Building robust mobile apps using React Native, Expo, and Node.js with a focus on scalability and user experience while emphasizing access for both iOS and Android.",
+            },
+            {
+              icon: <Cloud className="w-12 h-12 text-white-500" />,
+              title: "Salesforce",
+              description:
+                "Customizing Salesforce with Apex, Lightning Web Components, and declarative tools to build scalable data-driven applications. Experience includes mobile integration, advanced data modeling, and process automation tailored to organizational needs.",
             },
           ].map((skill, index) => (
             <motion.div
@@ -72,7 +78,7 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 * index, duration: 0.5 }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 dark:border-gray-700 w-80"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4">{skill.icon}</div>
