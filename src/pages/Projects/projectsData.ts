@@ -40,4 +40,13 @@ export const projects: Project[] = [
     technologies: ["React Native", "Expo", "Node.js", "iOS", "Android", "Web"],
     githubUrl: "https://github.com/Brycyn/FoodFinder",
   },
+  {
+    id: 3,
+    title: "Westmont Course Syllabi Search",
+    description:
+      "A Lightning Web Component that allows users to search for course syllabi for Westmont College courses",
+    image: "../../src/assets/westmont-icon.png",
+    category: "web",
+    technologies: ["Salesforce", "Apex", "Lightning Web Components", "API"],
+  },
 ];

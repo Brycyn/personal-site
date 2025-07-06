@@ -34,8 +34,8 @@ const Projects: React.FC = () => {
       <section className="py-12 text-center">
         <h1 className="text-4xl font-bold mb-4">My Projects</h1>
         <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          A collection of my recent work across various technologies and
-          domains. Each project represents a unique challenge and solution.
+          A showcase of apps and tools I’ve built—highlighting my work in mobile
+          development, Salesforce, and full-stack projects.
         </p>
       </section>
 
