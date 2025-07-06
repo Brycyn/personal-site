@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import Headshot from "../../assets/Headshot.jpg";
 import Resume from "../../assets/Brycyn Gossett 2025.pdf";
+import ContactCTA from "../../components/ContactCTA";
 
 const About: React.FC = () => {
   const skills = [
@@ -376,21 +377,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-12 px-8 bg-blue-50 dark:bg-blue-900/20 rounded-2xl text-center">
-        <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
-        <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-          I'm always open to discussing new projects, creative ideas, or
-          opportunities to be part of your vision.
-        </p>
-        <motion.a
-          href="mailto:brycyn8@gmail.com"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 dark:bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Get In Touch <ArrowRight size={18} />
-        </motion.a>
-      </section>
+      <ContactCTA />
     </motion.div>
   );
 };
