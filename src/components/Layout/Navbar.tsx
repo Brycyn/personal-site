@@ -73,6 +73,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                aria-label="GitHub Profile"
               >
                 <Github size={20} />
               </a>
@@ -81,6 +82,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                aria-label="LinkedIn Profile"
               >
                 <Linkedin size={20} />
               </a>
@@ -134,6 +136,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              aria-label="GitHub Profile"
             >
               <Github size={20} />
             </a>
@@ -142,6 +145,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              aria-label="LinkedIn Profile"
             >
               <Linkedin size={20} />
             </a>
