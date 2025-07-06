@@ -5,6 +5,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
+  hoverImage?: string; // Optional hover image
   category: ProjectCategory;
   technologies: string[];
   githubUrl?: string;
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     description:
       "The Westmont College mobile app provides students and visitors with quick access to campus maps, events, dining menus, directories, shuttle tracking, and livestreams of chapel and athletic events.It integrates key campus services into one user-friendly platform.",
     image: "../../src/assets/westmont-icon.png",
+    hoverImage: "../../src/assets/WESTStockPhoto.png", // Example hover image
     category: "mobile",
     technologies: [
       "React Native",
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     description:
       "An easy way to find local Food Banks and Bus Routes to them in the 805",
     image: "../../src/assets/SBCFoodBank.png",
+    hoverImage: "../../src/assets/FoodFinder-photo.png", // Example hover image
     category: "mobile",
     technologies: ["React Native", "Expo", "Node.js", "iOS", "Android", "Web"],
     githubUrl: "https://github.com/Brycyn/FoodFinder",
@@ -43,6 +46,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Westmont Course Syllabi Search",
+    hoverImage: "../../src/assets/SyllabiProduct.png", // Example hover image
     description:
       "A Lightning Web Component that allows users to search for course syllabi for Westmont College courses",
     image: "../../src/assets/westmont-icon.png",
