@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail, FileText } from "lucide-react";
 import Headshot from "../../assets/Headshot.jpg";
-import Resume from "../../assets/Brycyn Gossett Resume June 2025.pdf";
+import Resume from "../../assets/Brycyn Gossett 2025.pdf";
 
 const About: React.FC = () => {
   const skills = [
@@ -295,10 +295,10 @@ const About: React.FC = () => {
             Santa Barbara City College{" "}
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Graduated with honors on the Presidential Honor Roll and an
-            Associates Degree in Business and Economics while competing as a
-            member of the Men’s Basketball Team. Earned First-Team
-            All-Conference recognition for athletic performance.{" "}
+            Graduated on the Presidential Honor Roll and an Associates Degree in
+            Business and Economics while competing as a member of the Men’s
+            Basketball Team. Earned First-Team All-Conference recognition for
+            athletic performance.{" "}
           </p>
         </motion.div>
         <br />
