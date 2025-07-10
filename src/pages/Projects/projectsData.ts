@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Westmont Course Syllabi Search",
-    hoverImage: "../../src/assets/SyllabiProduct.png", // Example hover image
+    hoverImage: "../../src/assets/CSProduct.png", // Example hover image
     description:
       "A Lightning Web Component that allows users to search for course syllabi for Westmont College courses",
     image: "../../src/assets/westmont-icon.png",
