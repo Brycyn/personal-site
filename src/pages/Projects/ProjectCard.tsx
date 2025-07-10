@@ -36,29 +36,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             alt={project.title}
             className="w-full h-full object-contain bg-white"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
-            <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-center">
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 ">
+            <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm leading-relaxed">{project.description}</p>
-              <div className="p-6 flex-grow">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <p className="text-sm leading-relaxed mb-4">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="px-2 py-1 bg-white bg-opacity-20 text-white rounded text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <div className="px-6 pb-6 pt-2 flex justify-between border-t border-gray-100 dark:border-gray-700">
+
+              <div className="flex justify-between pt-2 border-t border-white border-opacity-20">
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors"
+                    className="flex items-center gap-1 text-blue-300 hover:text-blue-200 font-medium transition-colors"
                   >
                     <ExternalLink size={16} /> Live Demo
                   </a>
@@ -68,7 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 font-medium transition-colors"
+                    className="flex items-center gap-1 text-white hover:text-gray-200 font-medium transition-colors"
                   >
                     <Github size={16} /> Code
                   </a>
