@@ -40,7 +40,15 @@ export const projects: Project[] = [
     image: "../../src/assets/SBCFoodBank.png",
     hoverImage: "../../src/assets/FoodFinder-photo.png", // Example hover image
     category: "mobile",
-    technologies: ["React Native", "Expo", "Node.js", "iOS", "Android", "Web"],
+    technologies: [
+      "React Native",
+      "Expo",
+      "Node.js",
+      "iOS",
+      "Android",
+      "Web",
+      "Supabase",
+    ],
     githubUrl: "https://github.com/Brycyn/FoodFinder",
   },
   {
