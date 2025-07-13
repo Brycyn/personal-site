@@ -4,8 +4,58 @@ import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import Headshot from "../../assets/Headshot.jpg";
 import Resume from "../../assets/Brycyn Gossett 2025.pdf";
 import ContactCTA from "../../components/ContactCTA";
+import GradPhoto from "../../assets/GradPhoto.jpg";
+import MidnightMadness from "../../assets/MidnightMadness.jpg";
+import SBCC from "../../assets/SBCC.jpg";
+import Capo from "../../assets/Capo.jpg";
+import MediaDay from "../../assets/MediaDay.jpg";
+import Catlab from "../../assets/catlab1.png";
+import Webconnex from "../../assets/Webconnex.jpg";
+import ImageCarousel from "../../components/ImageCarousel";
 
 const About: React.FC = () => {
+  // Carousel images - add more photos here
+  const carouselImages = [
+    {
+      src: Headshot,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: GradPhoto,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: MidnightMadness,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: SBCC,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: Capo,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: MediaDay,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: Catlab,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    {
+      src: Webconnex,
+      alt: "Brycyn Gossett - Software Engineer",
+    },
+    // Add more images here as needed
+    // Example:
+    // {
+    //   src: "/path/to/another/photo.jpg",
+    //   alt: "Brycyn Gossett - Another photo"
+    // },
+  ];
+
   const skills = [
     {
       category: "Mobile Development",
@@ -125,77 +175,131 @@ const About: React.FC = () => {
     >
       {/* About Hero */}
       <section className="relative py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-          <div className="lg:col-span-3">
-            <h1 className="text-4xl font-bold mb-4">About Me</h1>
+        <div className="grid grid-cols-1 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl font-bold mb-4 font-poppins">My Journey</h1>
+
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               I'm a passionate software engineer with over three years of
-              experience building modern web applications and distributed
-              systems. I specialize in crafting clean, efficient solutions to
-              complex challenges, with a focus on performance, scalability, and
-              user experience.
+              experience building modern web and mobile applications and
+              distributed systems. I specialize in crafting clean, efficient
+              solutions to complex challenges, with a focus on performance,
+              scalability, and user experience. When I am not in front of a
+              computer, I enjoy playing basketball, being outdoors, and spending
+              time with my dog, family, and friends. I truly value community and
+              collaboration, and I am always looking for new opportunities to
+              make an impact, learn, and grow.
             </p>
 
-            <h3 className="text-2xl font-bold mb-4">Where I Come From</h3>
+            <h3 className="text-2xl font-bold mb-4 font-poppins">
+              Where I Come From
+            </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-8">
               I grew up in Santa Barbara, CA, and spent much of my life as a
               student-athlete. I initially played both football and basketball,
-              but in high school, I chose to focus solely on basketball. After
-              graduating, I continued my academic and athletic journey at Santa
-              Barbara City College (SBCC), where I studied Business for 2.5
-              years before receiving an opportunity to play at Westmont College.
-              At Westmont, I discovered my faith and decided to change my major
-              to Computer Science. Although the coursework was rigorous, I found
-              it far more engaging and fulfilling. My time at Westmont not only
-              strengthened my faith but also allowed me to build meaningful
-              relationships within the community—connections that have had a
-              lasting impact on my life.
+              but in high school, I chose to focus solely on basketball. I spent
+              four years in the Dos Pueblos Engineering Academy, where I
+              programmed with Arduino, designed in SolidWorks, and worked in the
+              machine shop building project components using lathes, mills, and
+              CNC machines. After graduating, I continued my academic and
+              athletic journey at Santa Barbara City College (SBCC), where I
+              studied Business for 2.5 years before receiving an opportunity to
+              play at Westmont College. At Westmont, I re-discovered my faith
+              and love for building tools to help people. This led me to change
+              my major from Business and Economics to Computer Science. Although
+              the coursework was rigorous, I found it far more engaging and
+              fulfilling. My time at Westmont not only strengthened my faith but
+              also allowed me to build meaningful relationships within the
+              community—connections that have had a lasting impact on my life.
             </p>
-            <h3 className="text-2xl font-bold mb-4">Road to SWE</h3>
 
-            <div className="text-gray-700 dark:text-gray-300 space-y-8">
-              <p>
-                My journey into software development began during my freshman
-                year of high school when I joined the Dos Pueblos Engineering
-                Academy. There, I was introduced to Arduino and spent four years
-                programming boards for various hands-on projects. After
-                graduating from the academy, I took a break from coding until I
-                arrived at Westmont College.
-              </p>
-              <p>
-                It was at Westmont, during a Human-Computer Interaction course
-                with Dr. Daniel Patterson, that I realized I wanted to pursue a
-                career in software development. That same year, I joined
-                Westmont’s Center for Applied Technology (CATLab) as a
-                Salesforce Developer. At CATLab, I gained valuable experience
-                working in an agile environment, building projects used by
-                students and staff—including reviving an outdated mobile app and
-                contributing to the college’s website.
-              </p>
-              <p>
-                After a year at CATLab, I interned at Tondro Consulting, where I
-                contributed to data clean-up initiatives and developed custom
-                Lightning Web Components (LWC) to improve faculty attendance
-                management.
-              </p>
-              <p>
-                Currently, I’m working at Webconnex, where I’ve collaborated
-                with a team of interns to enhance and optimize the Account
-                Manager UI using React and custom Rainbow components. Our work
-                significantly improved mobile responsiveness and usability. I
-                also implemented custom GraphQL logic for seamless cross-device
-                account management and developed automated tests with React/Vite
-                and Apollo Client mocks to ensure secure and reliable login
-                functionality.
-              </p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="flex justify-center items-center"
+            >
+              <ImageCarousel images={carouselImages} />
+            </motion.div>
+            <h3 className="text-2xl font-bold mb-4 font-poppins">
+              Road to Software Engineering
+            </h3>
+
+            <div className="text-gray-700 dark:text-gray-300 space-y-6">
+              <div>
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 font-poppins">
+                  The Foundation
+                </h4>
+                <p>
+                  My journey into software development began during my freshman
+                  year at the Dos Pueblos Engineering Academy (DPEA). There, I
+                  was introduced to Arduino and spent four years programming
+                  boards for hands-on projects like light and kinetic
+                  sculptures, while also building components in the machine shop
+                  for our robotics team.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                  The Turning Point
+                </h4>
+                <p>
+                  After taking a break from coding to focus on academics and
+                  athletics, I rediscovered programming at Westmont College. It
+                  was during a Human-Computer Interaction course with Dr. Daniel
+                  Patterson that I realized I wanted to pursue a career in
+                  software development—and that I could excel at both
+                  programming and athletics.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                  First Professional Experience
+                </h4>
+                <p>
+                  I joined Westmont's Center for Applied Technology (CATLab) as
+                  a Salesforce Developer, gaining valuable experience in agile
+                  development while building projects used by students and
+                  staff. Key projects included reviving an outdated mobile app
+                  and contributing web components to the college's website.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                  Expanding My Skills
+                </h4>
+                <p>
+                  At Tondro Consulting, I contributed to data clean-up
+                  initiatives and developed custom Lightning Web Components to
+                  improve faculty attendance management for higher education
+                  institutions.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                  Current Focus
+                </h4>
+                <p>
+                  Currently at Webconnex, I collaborate with a team to enhance
+                  the Account Manager UI, migrating from Angular to React while
+                  significantly improving mobile responsiveness. I also
+                  implement GraphQL solutions for cross-device account
+                  management and develop automated tests to ensure secure,
+                  reliable functionality.
+                </p>
+              </div>
+
               <p>
                 I’m passionate about building intuitive, impactful software—and
                 I’m continually learning and exploring new technologies to stay
                 ahead in this fast-evolving industry.
               </p>
             </div>
-            <br />
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-8">
               <a
                 href="https://github.com/Brycyn"
                 target="_blank"
@@ -226,21 +330,6 @@ const About: React.FC = () => {
                 <FileText size={18} /> Resume
               </a>
             </div>
-          </div>
-          <div className="lg:col-span-2">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl"
-            >
-              <img
-                src={Headshot}
-                alt="Brycyn Gossett- Software Engineer"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            </motion.div>
           </div>
         </div>
       </section>
