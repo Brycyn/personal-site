@@ -46,7 +46,10 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
-            <Link to="/" className="font-bold text-xl tracking-tight">
+            <Link
+              to="/personal-site"
+              className="font-bold text-xl tracking-tight"
+            >
               <span className="text-blue-600 dark:text-blue-400">Brycyn</span>
               Gossett
             </Link>
