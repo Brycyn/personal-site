@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 
 const navItems = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/personal-site" },
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
 ];
