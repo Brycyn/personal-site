@@ -10,6 +10,10 @@ const navItems = [
   { name: "Projects", path: "/projects" },
 ];
 
+function normalizePath(path: string) {
+  return path.replace(/\/+$/, "");
+}
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -18,7 +22,7 @@ const Navbar: React.FC = () => {
 
   // Filter out current page from navigation
   const filteredNavItems = navItems.filter(
-    (item) => item.path !== location.pathname
+    (item) => normalizePath(item.path) !== normalizePath(location.pathname)
   );
 
   // Handle scroll effect
