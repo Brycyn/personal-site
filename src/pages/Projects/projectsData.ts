@@ -1,3 +1,9 @@
+import WestmontIcon from "../../assets/westmont-icon.png";
+import WESTStockPhoto from "../../assets/WESTStockPhoto.png";
+import SBCFoodBank from "../../assets/SBCFoodBank.png";
+import FoodFinderPhoto from "../../assets/FoodFinder-photo.png";
+import CSProduct from "../../assets/CSProduct.png";
+
 export type ProjectCategory = "web" | "mobile";
 
 export interface Project {
@@ -18,8 +24,8 @@ export const projects: Project[] = [
     title: "Westmont App",
     description:
       "The Westmont College mobile app provides students and visitors with quick access to campus maps, events, dining menus, directories, shuttle tracking, and livestreams of chapel and athletic events.It integrates key campus services into one user-friendly platform.",
-    image: "../../src/assets/westmont-icon.png",
-    hoverImage: "../../src/assets/WESTStockPhoto.png", // Example hover image
+    image: WestmontIcon,
+    hoverImage: WESTStockPhoto, // Example hover image
     category: "mobile",
     technologies: [
       "React Native",
@@ -37,8 +43,8 @@ export const projects: Project[] = [
     title: "Santa Barbara Food Finder",
     description:
       "An easy way to find local Food Banks and Bus Routes to them in the 805",
-    image: "../../src/assets/SBCFoodBank.png",
-    hoverImage: "../../src/assets/FoodFinder-photo.png", // Example hover image
+    image: SBCFoodBank,
+    hoverImage: FoodFinderPhoto, // Example hover image
     category: "mobile",
     technologies: [
       "React Native",
@@ -54,10 +60,10 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Westmont Course Syllabi Search",
-    hoverImage: "../../src/assets/CSProduct.png", // Example hover image
+    hoverImage: CSProduct, // Example hover image
     description:
       "A Lightning Web Component that allows users to search for course syllabi for Westmont College courses",
-    image: "../../src/assets/westmont-icon.png",
+    image: WestmontIcon,
     category: "web",
     technologies: ["Salesforce", "Apex", "Lightning Web Components", "API"],
   },
