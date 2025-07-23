@@ -79,7 +79,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             </div>
           </div>
         </div>
-        <div className="absolute top-0 right-0 m-4">
+        <div className="absolute top-0 right-0 m-4 space-between">
           <span
             className={`px-3 py-1 text-xs font-medium rounded-full ${
               project.category === "web"
@@ -94,6 +94,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               : project.category === "mobile"
               ? "Mobile"
               : "AI/ML"}
+          </span>
+        </div>
+        <div className="absolute top-0 left-0 m-4">
+          <span
+            className={`ml-3 px-3 py-1 text-xs font-medium rounded-full ${
+              project.status === "completed"
+                ? "bg-purple-100 text-purple-800 light:bg-purple-900 light:text-purple-200"
+                : project.status === "production"
+                ? "bg-green-100 text-green-800 light:bg-green-900 light:text-green-200"
+                : "bg-yellow-100 text-yellow-800 light:bg-yellow-900 light:text-yellow-200"
+            }`}
+          >
+            {project.status === "completed"
+              ? "Development Complete"
+              : project.status === "production"
+              ? "In Production"
+              : "In Development"}
           </span>
         </div>
       </div>
