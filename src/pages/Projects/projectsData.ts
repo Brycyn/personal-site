@@ -5,6 +5,7 @@ import FoodFinderPhoto from "../../assets/FoodFinder-photo.png";
 import CSProduct from "../../assets/CSProduct.png";
 
 export type ProjectCategory = "web" | "mobile";
+export type projectStatus = "production" | "completed" | "development";
 
 export interface Project {
   id: number;
@@ -13,6 +14,7 @@ export interface Project {
   image: string;
   hoverImage?: string; // Optional hover image
   category: ProjectCategory;
+  status: projectStatus;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     image: WestmontIcon,
     hoverImage: WESTStockPhoto, // Example hover image
     category: "mobile",
+    status: "production",
     technologies: [
       "React Native",
       "Expo",
@@ -46,6 +49,7 @@ export const projects: Project[] = [
     image: SBCFoodBank,
     hoverImage: FoodFinderPhoto, // Example hover image
     category: "mobile",
+    status: "development",
     technologies: [
       "React Native",
       "Expo",
@@ -55,7 +59,7 @@ export const projects: Project[] = [
       "Web",
       "Supabase",
     ],
-    githubUrl: "https://github.com/Brycyn/FoodFinder",
+    // githubUrl: "https://github.com/Brycyn/FoodFinder",
   },
   {
     id: 3,
@@ -64,6 +68,7 @@ export const projects: Project[] = [
     description:
       "A Lightning Web Component that allows users to search for course syllabi for Westmont College courses",
     image: WestmontIcon,
+    status: "production",
     category: "web",
     technologies: ["Salesforce", "Apex", "Lightning Web Components", "API"],
   },
