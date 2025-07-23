@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Software Engineer & Developer
+            Software Engineer
           </motion.h1>
           <motion.p
             className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed"
