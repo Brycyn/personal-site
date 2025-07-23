@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 
 const navItems = [
-  { name: "Home", path: "/personal-site" },
+  { name: "Home", path: "/personal-site/" },
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
 ];
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link
-              to="/personal-site"
+              to="/personal-site/"
               className="font-bold text-xl tracking-tight"
             >
               <span className="text-blue-600 dark:text-blue-400">Brycyn</span>
