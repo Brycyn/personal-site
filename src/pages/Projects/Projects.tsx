@@ -1,26 +1,34 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import { projects, ProjectCategory } from "./projectsData";
+import { projects, ProjectCategory, ProjectStatus } from "./projectsData";
 import { Filter } from "lucide-react";
 import ContactCTA from "../../components/ContactCTA";
 
 const Projects: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<ProjectCategory | "all">(
-    "all"
-  );
+  const [activeFilter, setActiveFilter] = useState<
+    ProjectCategory | "all" | ProjectStatus
+  >("all");
 
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((project) => project.category === activeFilter);
+      : projects.filter(
+          (project) =>
+            project.category === activeFilter || project.status === activeFilter
+        );
 
-  const filterCategories: { value: ProjectCategory | "all"; label: string }[] =
-    [
-      { value: "all", label: "All Projects" },
-      { value: "web", label: "Web Development" },
-      { value: "mobile", label: "Mobile Apps" },
-    ];
+  const filterCategories: {
+    value: ProjectCategory | "all" | ProjectStatus;
+    label: string;
+  }[] = [
+    { value: "all", label: "All Projects" },
+    { value: "web", label: "Web Development" },
+    { value: "mobile", label: "Mobile Apps" },
+    { value: "production", label: "In Production" },
+    { value: "completed", label: "Development Complete" },
+    { value: "development", label: "In Development" },
+  ];
 
   return (
     <motion.div
