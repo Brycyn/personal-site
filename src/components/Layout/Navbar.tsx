@@ -6,8 +6,8 @@ import { useTheme } from "../../context/ThemeContext";
 
 const navItems = [
   { name: "Home", path: "/personal-site/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
+  { name: "About", path: "/personal-site/about" },
+  { name: "Projects", path: "/personal-site/projects" },
 ];
 
 const Navbar: React.FC = () => {
