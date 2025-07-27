@@ -12,6 +12,8 @@ import MediaDay from "../../assets/MediaDay.jpg";
 import Catlab from "../../assets/catlab1.png";
 import Webconnex from "../../assets/Webconnex.jpg";
 import ImageCarousel from "../../components/ImageCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 const About: React.FC = () => {
   // Carousel images - add more photos here
@@ -465,6 +467,29 @@ const About: React.FC = () => {
         </motion.div>
       </section>
 
+      <section className="py-12">
+        <h2 className="text-3xl font-bold mb-10">Certifications</h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700"
+        >
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <FontAwesomeIcon icon={faCloud} size="5x" />
+            <div style={{ marginLeft: 20 }}>
+              <div className="mb-1 text-blue-600 dark:text-blue-400 font-medium">
+                Salesforce
+              </div>
+              <h3 className="text-xl font-semibold">AI Associate</h3>
+              <div className="text-gray-700 dark:text-gray-300 mb-4">
+                Credential ID 5217642
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
       {/* Contact CTA */}
       <ContactCTA />
     </motion.div>
