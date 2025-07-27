@@ -5,7 +5,7 @@ import FoodFinderPhoto from "../../assets/FoodFinder-photo.png";
 import CSProduct from "../../assets/CSProduct.png";
 
 export type ProjectCategory = "web" | "mobile";
-export type projectStatus = "production" | "completed" | "development";
+export type ProjectStatus = "production" | "completed" | "development";
 
 export interface Project {
   id: number;
@@ -14,7 +14,7 @@ export interface Project {
   image: string;
   hoverImage?: string; // Optional hover image
   category: ProjectCategory;
-  status: projectStatus;
+  status: ProjectStatus;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
